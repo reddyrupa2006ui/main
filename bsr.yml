@@ -1,0 +1,13 @@
+name:python
+on:[push]
+jobs:
+  tests:
+     runs-on:runs-time
+	 steps:
+	 -name:checkout code
+	 uses:actions/check@v4
+	 -name:start up python
+	 -uses:ctions/step-up python@v5
+	 python-version:"3:10"
+	 -name:run time
+	 run:python "main.py"
