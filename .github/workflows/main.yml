@@ -1,0 +1,2 @@
+a="rupa"
+print(a)
